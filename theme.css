@@ -1,0 +1,94 @@
+
+.container{
+    margin-top: 8vh;
+    margin-bottom: 20vh;
+    
+}
+
+.containerTwo{
+    margin-right: 25vw;
+     display: flex;
+    flex-direction: column;
+   align-content: center;
+    
+}
+
+.alignMe{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 5vw;
+    
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.containerTwo {
+  border-radius: 5px;
+  padding: 20px;
+  float:center; 
+}
+
+.colorMe{
+    color: green;
+}
+
+.w3-bar-item-w3-button {
+  background-color: #555;
+  color: white;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 30%;
+}
+
+.w3-bar-item-w3-button:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+
+.w3-bar-w3-grey {
+  background-color:#555; 
+  display: block;
+  width: 100%;
+}
+
