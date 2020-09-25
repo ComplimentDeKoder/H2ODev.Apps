@@ -97,18 +97,34 @@ input[type=reset]:hover {
   width: 100%;
 }
 
-@media (min-height:50px;) and (max-height:650px;){
+@media screen and(max-height:50px){
 html, body{
  padding:0;
  margin:0;
+ background-color: blue;
 }	
+.amzn{
+	position:absolute;
+	margin-right:1400px;
+}
+.play{
+	
+}
 }
 
 
-@media (min-height:650px;) and (max-height:950px;){
+@media screen and(max-height:950px){
 html, body{
  padding:0;
  margin:0;
+ background-color: blue;
 }	
+.amzn{
+	position:absolute;
+	margin-right:1400px;
+}
+.play{
+	
+}
 }
 
