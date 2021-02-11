@@ -1,130 +1,165 @@
-html, body{
- height:50%;
- padding:0;
- margin:0;
-}
- 
-.container{
-    margin-top: 8vh;
-    margin-bottom: 20px;
-    
+
+/*** Content CSS*****/
+
+body {
+    font-size: 16px;
 }
 
-.containerTwo{
-    margin-right: 25vw;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    
+.navbar-container {
+  position: fixed;
+  z-index: 99999;
+}
+.header_content_wrapper{
+    padding-bottom: 50px;
+}
+.navbar-nav .nav-item a {
+    color: #ffffff !important;
 }
 
-.alignMe{
-    margin-top: 20vw;
-    margin-bottom: 20vh;
-    margin-left: 5vw;
-    
-}
-
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
+.header-content, .header-content img {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  margin-top: 30px;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.container-fluid.hero-container {
+    padding-top: 50px;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-input[type=reset] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.post-container {
+    padding: 40px 0px;
 }
 
-input[type=reset]:hover {
-  background-color: #45a049;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
 }
 
-.containerTwo {
-  border-radius: 5px;
-  padding: 20px;
-  float:center; 
+.post-item {
+    border: 1px solid #ddd;
 }
 
-.colorMe{
-    color: green;
+.post-item img {
+    width: 100%;
 }
 
-.w3-bar-item-w3-button {
-  background-color: #555;
-  color: white;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 30%;
+.post-content {
+    padding: 15px 40px;
+}
+i.fab.fa-youtube{
+color:#ff0000;
+
+}
+i.fab.fa-instagram-square{
+    color: #fb3958;
+}
+i.fab.fa-twitter{
+color: #1DA1F2;
+
+}
+i.fab.fa-facebook-square{
+    color:#3b5998;
+}
+.post-content a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+.top-app h1{
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.post-content .btn {
+    color: #fff;
+    font-size: 14px;
+}
+.btn-two{
+    margin-right: 10px!important;
+}
+.navbar-container, .footer {
+    background: #A9A9A9;
 }
 
-.w3-bar-item-w3-button:hover {
-  background-color: #777;
-}
-
-/* Style the tab content */
-
-.w3-bar-w3-grey {
-  background-color:#555; 
-  display: block;
-  width: 100%;
-}
-
-@media screen and(max-height:50px){
-html, body{
- padding:0;
- margin:0;
- background-color: blue;
-}	
-.amzn{
-	position:absolute;
-	margin-right:1400px;
-}
-.play{
-	
-}
+.post-content a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
 }
 
 
-@media screen and(max-height:950px){
-html, body{
- padding:0;
- margin:0;
- background-color: blue;
-}	
-.amzn{
-	position:absolute;
-	margin-right:1400px;
-}
-.play{
-	
-}
+.post-item {
+    transition: all 0.6s ease-out;
+    cursor: pointer;
 }
 
+.post-item:hover {
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.2);
+}
+
+.footer {
+    padding: 20px 0px;
+}
+
+.navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color:#000!important;}
+.terms-two{
+    padding-top: 50px!important;
+}
+a:link{
+    text-decoration: none!important;
+}
+
+.icon_wrapper {
+    margin-top: 10px;
+}
+
+.icon_wrapper i {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.hero-container .carousel.slide {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/********media query start**********/
+
+@media (max-width: 600px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        padding: 0px 20px;
+    }
+
+}
+
+@media (min-width: 610px) and (max-width: 800px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 810px) and (max-width: 980px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        padding: 0px 20px;
+    }
+}
+
+@media(min-width: 982px) {
+    .navbar-container {
+        padding: 0 80px !important;
+    }
+}
